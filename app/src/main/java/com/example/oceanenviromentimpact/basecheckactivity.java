@@ -20,7 +20,8 @@ public class basecheckactivity extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                variable.sizeofthetrashbag = Integer.getInteger(input.getEditableText().toString());
+                String temp = input.getText().toString();
+                variable.sizeofthetrashbag = Integer.parseInt(temp);
                 Intent intent = new Intent(basecheckactivity.this, MainActivity.class);
                 startActivity(intent);
             }

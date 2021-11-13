@@ -23,14 +23,15 @@ public class impactpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 poundsoftrashinputted = Integer.getInteger(trashremoval.getEditableText().toString());
+                int marinelifeint = Math.round(poundsoftrashinputted/176);
+                marinelifesavecount.setText(String.valueOf(marinelifeint));
+                int oceansaveint = Math.round(poundsoftrashinputted);
+                int humansaveint =(int)(poundsoftrashinputted*.5);
+                oceanareasavecount.setText(String.valueOf(oceansaveint));
+                humanpeoplesavecount.setText(String.valueOf(humansaveint));
             }
         });
-        int marinelifeint = Math.round(poundsoftrashinputted/176);
-        marinelifesavecount.setText(marinelifeint);
-        int oceansaveint = Math.round(poundsoftrashinputted);
-        int humansaveint =(int)(poundsoftrashinputted*.5);
-        oceanareasavecount.setText(oceansaveint);
-        humanpeoplesavecount.setText(humansaveint);
+
 
     }
 }
