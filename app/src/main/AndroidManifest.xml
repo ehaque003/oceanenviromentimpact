@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OceanEnviromentImpact">
+        <activity android:name=".wastetrackerpage"></activity>
+        <activity android:name=".impactpage" />
         <activity android:name=".basecheckactivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
