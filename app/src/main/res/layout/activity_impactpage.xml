@@ -6,53 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".impactpage">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="16dp" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/poundsoftrashoutoftheocean"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="100dp"
+        android:text="Amount Of Trash Out Of The Ocean"
+        tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="45dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="205dp" />
+        android:text="How much marine wildlife have you saved:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="244dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Enter"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="103dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/marinewildlifesavecount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="242dp" />
+        android:text="0"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/oceansavedsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <TextView
+        android:id="@+id/humansavedcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many humans have you saved: "
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="347dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="288dp" />
+        android:text="How much of the ocean have you saved:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="298dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
