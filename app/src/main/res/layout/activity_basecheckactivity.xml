@@ -10,7 +10,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/sanlusus"
         android:text="How big is your trash bag?"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="107dp" />
 
@@ -24,11 +26,16 @@
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="234dp" />
 
-    <Button
-        android:id="@+id/done"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Done"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="443dp" />
+        android:scaleX="1.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shark" />
 </androidx.constraintlayout.widget.ConstraintLayout>
