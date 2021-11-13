@@ -1,0 +1,2 @@
+rootProject.name = "Ocean Enviroment Impact"
+include ':app'
