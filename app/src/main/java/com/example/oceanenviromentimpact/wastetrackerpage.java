@@ -111,7 +111,7 @@ public class wastetrackerpage extends AppCompatActivity {
         enterbutton.setVisibility(View.INVISIBLE);
         improvementtextshower.setVisibility(View.VISIBLE);
         improvementtextshower.setText(improvementspeaker);
-        sendingint = improvementmarker;
+        sendingint = Math.abs(variable.sum());
         impactpagemover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
