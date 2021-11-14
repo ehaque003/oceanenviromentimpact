@@ -88,16 +88,10 @@ public class wastetrackerpage extends AppCompatActivity {
         SQLiteDatabase db = dbhelperone.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(AppDataRepo.WasteCountEntry.COLUMN_NAME_WASTEAMOUNT, wasteamount);
-        contentValues.put(AppDataRepo.WasteCountEntry.COLUMN_NAME_ID, variable.id+1);
         db.insert(AppDataRepo.WasteCountEntry.TABLE_NAME, null, contentValues);
     }
 
     public void improvmentspeechmaker(){
-        SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
-        variable.id = (sh.getInt("id", 0))+1;
-        SharedPreferences.Editor myEdit = sh.edit();
-        myEdit.putInt("id", variable.id);
-        myEdit.apply();
         variable.getAverage();
         int improvementmarker = variable.averagewastecount-amountoftrash;
         insertWasteAmount(amountoftrash);

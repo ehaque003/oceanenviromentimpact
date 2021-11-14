@@ -18,7 +18,6 @@ public class variable {
 
     static int sizeofthetrashbag = 10;
     static int averagewastecount = 50;
-    static int id = 0;
     static SQLiteDatabase db = dbHelper.getWritableDatabase();
 
 
@@ -29,8 +28,6 @@ public class variable {
             int avg = res.getInt(res.getColumnIndex("t"));
             Log.i("ENam", "wastecount "+avg);
             averagewastecount = avg;
-
-
     }
 
 }

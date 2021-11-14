@@ -30,10 +30,8 @@ public class basecheckactivity extends AppCompatActivity {
                 SharedPreferences.Editor myEdit = sharedPreferences.edit();
                 myEdit.putBoolean("usedAppFirstTime", false);
                 myEdit.putInt("sizeOfTrashBag", variable.sizeofthetrashbag);
-                myEdit.putInt("id", 1);
                 myEdit.commit();
                 insertWasteAmount(5);
-                variable.id = 1;
                 insertWasteAmount(5);
                 Intent intent = new Intent(basecheckactivity.this, MainActivity.class);
                 startActivity(intent);
@@ -45,7 +43,6 @@ public class basecheckactivity extends AppCompatActivity {
         SQLiteDatabase db = dbhelperone.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(AppDataRepo.WasteCountEntry.COLUMN_NAME_WASTEAMOUNT, wasteamount);
-        contentValues.put(AppDataRepo.WasteCountEntry.COLUMN_NAME_ID, variable.id+1);
         db.insert(AppDataRepo.WasteCountEntry.TABLE_NAME, null, contentValues);
     }
 }
