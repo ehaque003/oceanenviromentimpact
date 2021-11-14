@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="406dp"
-        android:layout_height="730dp"
+        android:layout_width="409dp"
+        android:layout_height="749dp"
         android:scaleX="1.18"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,6 +160,7 @@
         android:text="Go back to homepage"
         android:textSize="20sp"
         android:visibility="invisible"
+        app:backgroundTint="#2258B3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

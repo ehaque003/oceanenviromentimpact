@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Safwa/oceanenviromentimpact/app/src/main/res/layout/activity_basecheckactivity.xml" value="0.1634963768115942" />
+        <entry key="..\:/Users/Safwa/oceanenviromentimpact/app/src/main/res/layout/activity_basecheckactivity.xml" value="0.264" />
         <entry key="..\:/Users/Safwa/oceanenviromentimpact/app/src/main/res/layout/activity_impactpage.xml" value="0.264" />
-        <entry key="..\:/Users/shaya/AndroidStudioProjects/OceanEnviromentImpact/app/src/main/res/layout/activity_impactpage.xml" value="0.38697916666666665" />
-        <entry key="..\:/Users/shaya/AndroidStudioProjects/OceanEnviromentImpact/app/src/main/res/layout/activity_wastetrackerpage.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Safwa/oceanenviromentimpact/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Safwa/oceanenviromentimpact/app/src/main/res/layout/activity_wastetrackerpage.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
