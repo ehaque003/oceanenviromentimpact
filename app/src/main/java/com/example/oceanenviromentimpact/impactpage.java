@@ -51,8 +51,8 @@ public class impactpage extends AppCompatActivity {
         infoshower.setText("Impact of "+poundsoftrashinputted+" pounds of waste out of the ocean: ");
         int marinelifeint = Math.round(poundsoftrashinputted/176);
         marinelifesavecount.setText(String.valueOf(marinelifeint));
-        int oceansaveint = Math.round(poundsoftrashinputted);
-        int humansaveint =(int)(poundsoftrashinputted*.5);
+        int oceansaveint = (int)(poundsoftrashinputted*0.05);
+        int humansaveint =(int)(poundsoftrashinputted/17000);
         oceanareasavecount.setText(String.valueOf(oceansaveint));
         humanpeoplesavecount.setText(String.valueOf(humansaveint));
         gobacktohomepage.setOnClickListener(new View.OnClickListener() {
