@@ -34,8 +34,11 @@ public class variable {
         Cursor res = db.rawQuery("select sum(WasteAmount) as t from WASTECOUNT", null);
         Cursor res2 = db.rawQuery("select max(_id) as s from WASTECOUNT", null);
         res.moveToFirst();
+        res2.moveToFirst();
         int sum = res.getInt(res.getColumnIndex("t"));
-        int amount = res.getInt(res2.getColumnIndex("s"));
+        int amount = res2.getInt(res2.getColumnIndex("s"));
+        Log.i("sum", ""+sum);
+        Log.i("amount", ""+amount);
         int improvment = sum - (averagewastecount*amount);
         return improvment;
     }
