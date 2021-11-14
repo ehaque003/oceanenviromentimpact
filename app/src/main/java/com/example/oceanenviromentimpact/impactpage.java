@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class impactpage extends AppCompatActivity {
     int poundsoftrashinputted = 0;
-    TextView marinelifesavecount, oceanareasavecount, humanpeoplesavecount, textview, textview2, textView3;
+    TextView marinelifesavecount, oceanareasavecount, humanpeoplesavecount, textview, textview2, textView3, infoshower;
     EditText trashremoval;
     Button enter, gobacktohomepage;
     @Override
@@ -27,6 +27,7 @@ public class impactpage extends AppCompatActivity {
         textview2 = findViewById(R.id.textView5);
         textView3 = findViewById(R.id.textView7);
         gobacktohomepage = findViewById(R.id.gobacktohomepage);
+        infoshower = findViewById(R.id.infoshower);
         Intent intent = getIntent();
         int improvement = intent.getIntExtra("showImprovment", 0);
         if(improvement == 0){
@@ -47,6 +48,7 @@ public class impactpage extends AppCompatActivity {
     }
 
     public void showimpact(){
+        infoshower.setText("Impact of "+poundsoftrashinputted+" pounds of waste out of the ocean: ");
         int marinelifeint = Math.round(poundsoftrashinputted/176);
         marinelifesavecount.setText(String.valueOf(marinelifeint));
         int oceansaveint = Math.round(poundsoftrashinputted);
@@ -72,5 +74,6 @@ public class impactpage extends AppCompatActivity {
         textview2.setVisibility(View.VISIBLE);
         textView3.setVisibility(View.VISIBLE);
         gobacktohomepage.setVisibility(View.VISIBLE);
+        infoshower.setVisibility(View.VISIBLE);
     }
 }
