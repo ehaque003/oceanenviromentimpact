@@ -49,7 +49,7 @@ public class wastetrackerpage extends AppCompatActivity {
         nobutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                choiceshower.setText("Please type in the percentage on how full the trash bin looks like?");
+                choiceshower.setText("How full is your trash bag today? (In percentage out of 100)");
                 yesbutton.setVisibility(View.INVISIBLE);
                 nobutton.setVisibility(View.INVISIBLE);
                 answer.setVisibility(View.VISIBLE);
