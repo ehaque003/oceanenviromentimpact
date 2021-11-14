@@ -50,6 +50,7 @@ public class wastetrackerpage extends AppCompatActivity {
                 nobutton.setVisibility(View.INVISIBLE);
                 answer.setVisibility(View.VISIBLE);
                 enterbutton.setVisibility(View.VISIBLE);
+                enterbutton.setHint("Percentage(%)");
             }
         });
 

@@ -14,8 +14,9 @@
         android:layout_marginLeft="55dp"
         android:layout_marginTop="45dp"
         android:ems="10"
+        android:foregroundGravity="center_vertical"
+        android:hint="Amount Of Trash Out Of The Ocean"
         android:inputType="textPersonName"
-        android:text="Amount Of Trash Out Of The Ocean"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
