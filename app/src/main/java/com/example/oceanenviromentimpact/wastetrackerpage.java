@@ -2,7 +2,10 @@ package com.example.oceanenviromentimpact;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class wastetrackerpage extends AppCompatActivity {
-
+    static AppDataDBHelper dbhelperone = null;
     TextView choiceshower, improvementtextshower;
     Button yesbutton, nobutton, enterbutton, impactpagemover;
     EditText answer;
@@ -22,6 +25,7 @@ public class wastetrackerpage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wastetrackerpage);
+        dbhelperone = new AppDataDBHelper(getBaseContext());
         choiceshower = findViewById(R.id.choicegiver);
         yesbutton = findViewById(R.id.yesbutton);
         nobutton = findViewById(R.id.nobutton);
@@ -50,7 +54,7 @@ public class wastetrackerpage extends AppCompatActivity {
                 nobutton.setVisibility(View.INVISIBLE);
                 answer.setVisibility(View.VISIBLE);
                 enterbutton.setVisibility(View.VISIBLE);
-                enterbutton.setHint("Percentage(%)");
+                answer.setHint("Percentage(%)");
             }
         });
 
@@ -80,8 +84,23 @@ public class wastetrackerpage extends AppCompatActivity {
 
     }
 
+    public static void insertWasteAmount(int wasteamount){
+        SQLiteDatabase db = dbhelperone.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(AppDataRepo.WasteCountEntry.COLUMN_NAME_WASTEAMOUNT, wasteamount);
+        contentValues.put(AppDataRepo.WasteCountEntry.COLUMN_NAME_ID, variable.id+1);
+        db.insert(AppDataRepo.WasteCountEntry.TABLE_NAME, null, contentValues);
+    }
+
     public void improvmentspeechmaker(){
+        SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
+        variable.id = (sh.getInt("id", 0))+1;
+        SharedPreferences.Editor myEdit = sh.edit();
+        myEdit.putInt("id", variable.id);
+        myEdit.apply();
+        variable.getAverage();
         int improvementmarker = variable.averagewastecount-amountoftrash;
+        insertWasteAmount(amountoftrash);
         String improvementspeaker = "";
         if(improvementmarker == 0){
             improvementspeaker = "You have done much so far, but keep going! The app believes in you!";

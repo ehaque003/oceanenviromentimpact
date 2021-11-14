@@ -11,8 +11,8 @@
         android:theme="@style/Theme.OceanEnviromentImpact">
         <activity android:name=".wastetrackerpage"></activity>
         <activity android:name=".impactpage" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".basecheckactivity">
+        <activity android:name=".basecheckactivity"/>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
