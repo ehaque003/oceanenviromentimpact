@@ -64,7 +64,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:visibility="visible"
-        app:backgroundTint="#0CDAF4"
+        app:backgroundTint="#0EA3E8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/poundsoftrashoutoftheocean" />
 
