@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <EditText
         android:id="@+id/sizeofthetrashbag"
@@ -56,8 +56,8 @@
         android:ems="10"
         android:fontFamily="@font/sanlususbold"
         android:gravity="center_horizontal|center_vertical"
+        android:hint="In Pounds"
         android:inputType="textPersonName"
-        android:text=" In Pounds"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

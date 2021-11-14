@@ -10,23 +10,32 @@
         android:id="@+id/textview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="105dp"
         android:text="Welcome To Waste Tracker/Impact"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="105dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/impactpagechanger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="73dp"
         android:text="Impact Page"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2" />
 
     <Button
         android:id="@+id/wastertrackerpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="95dp"
         android:text="Waste Tracker"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/impactpagechanger" />
 </androidx.constraintlayout.widget.ConstraintLayout>

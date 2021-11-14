@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, impactpage.class);
-                intent.putExtra("showImprovment", false);
+                intent.putExtra("showImprovment", 0);
                 startActivity(intent);
             }
         });
